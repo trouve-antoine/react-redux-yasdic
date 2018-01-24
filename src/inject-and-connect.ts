@@ -10,8 +10,8 @@ export const injectAndConnect = <TStateProps, TOwnProps, TDispatchProps, State>(
     ...connectArgs: any[]
   ) =>
   (
-    component: React.ComponentType<TStateProps & TOwnProps>
-  ): React.ComponentType<TStateProps & TOwnProps & TDispatchProps> =>
+    component: React.ComponentType<TStateProps & TOwnProps & TDispatchProps>
+  ): React.ComponentType<TOwnProps> =>
 {
   let serviceContainer: IServiceDIContainer;
 

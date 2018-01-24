@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "React/Redux intergration for YASDIC",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "npm test"
+    "build": "cd src && tsc",
+    "test": "mocha -r ts-node/register ./test/*.ts"
   },
   "repository": {
     "type": "git",
