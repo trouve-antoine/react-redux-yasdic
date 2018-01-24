@@ -1,0 +1,36 @@
+{
+  "name": "react-redux-yasdic",
+  "version": "1.0.0",
+  "description": "React/Redux intergration for YASDIC",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trouve-antoine/react-redux-yasdic.git"
+  },
+  "keywords": [
+    "react",
+    "redux",
+    "di"
+  ],
+  "author": "Antoine Trouvé",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/trouve-antoine/react-redux-yasdic/issues"
+  },
+  "homepage": "https://github.com/trouve-antoine/react-redux-yasdic#readme",
+  "devDependencies": {
+    "@types/prop-types": "^15.5.2",
+    "@types/react": "^16.0.34",
+    "@types/react-redux": "^5.0.14",
+    "typescript": "^2.6.2"
+  },
+  "dependencies": {
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "react-redux": "^5.0.6",
+    "yasdic": "^1.3.0"
+  }
+}
