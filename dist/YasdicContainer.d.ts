@@ -7,7 +7,7 @@ export interface Props {
 }
 export declare class YasdicContainer extends React.Component<Props> {
     static childContextTypes: {
-        serviceContainer: prp.Requireable<any>;
+        serviceContainer: prp.Validator<any>;
     };
     getChildContext(): {
         serviceContainer: IServiceDIContainer;

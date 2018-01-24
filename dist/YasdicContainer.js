@@ -1,7 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const React = require("react");
-const yasdic_1 = require("yasdic");
 const prp = require("prop-types");
 class YasdicContainer extends React.Component {
     getChildContext() {
@@ -12,7 +11,7 @@ class YasdicContainer extends React.Component {
     }
 }
 YasdicContainer.childContextTypes = {
-    serviceContainer: prp.instanceOf(yasdic_1.ServiceDIContainer)
+    serviceContainer: prp.any.isRequired
 };
 exports.YasdicContainer = YasdicContainer;
 exports.default = YasdicContainer;
