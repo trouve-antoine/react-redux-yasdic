@@ -1,6 +1,6 @@
 {
   "name": "react-redux-yasdic",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React/Redux intergration for YASDIC",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

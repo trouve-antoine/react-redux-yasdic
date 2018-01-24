@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { IServiceDIContainer, ServiceDIContainer } from 'yasdic';
+import { IServiceDIContainer } from 'yasdic';
 
 import * as prp from 'prop-types'
 
@@ -9,7 +9,7 @@ export interface Props {
 
 export class YasdicContainer extends React.Component<Props> {
   static childContextTypes = {
-    serviceContainer: prp.instanceOf(ServiceDIContainer)
+    serviceContainer: prp.any.isRequired
   }
 
   getChildContext(){
