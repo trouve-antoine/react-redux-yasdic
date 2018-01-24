@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { ServiceDIContainer, IServiceDIContainer } from 'yasdic';
+import { IServiceDIContainer } from 'yasdic';
 import { connect, MapStateToProps, MapDispatchToPropsFunction } from 'react-redux'
 
 import * as prp from 'prop-types'
@@ -32,7 +32,7 @@ export const injectAndConnect = <TStateProps, TOwnProps, TDispatchProps, State>(
   
   class InjectedAndConnectedComponent extends React.Component<TStateProps & TOwnProps & TDispatchProps> {
     static contextTypes = {
-      serviceContainer: prp.instanceOf(ServiceDIContainer)
+      serviceContainer: prp.any.isRequired
     };
 
     constructor(props: TStateProps & TOwnProps & TDispatchProps, context: { serviceContainer: IServiceDIContainer }) {

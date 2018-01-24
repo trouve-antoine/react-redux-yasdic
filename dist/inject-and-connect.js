@@ -1,7 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const React = require("react");
-const yasdic_1 = require("yasdic");
 const react_redux_1 = require("react-redux");
 const prp = require("prop-types");
 exports.injectAndConnect = (mapStateToProps, injectAndMapDispatchToProps, ...connectArgs) => (component) => {
@@ -33,7 +32,7 @@ exports.injectAndConnect = (mapStateToProps, injectAndMapDispatchToProps, ...con
         }
     }
     InjectedAndConnectedComponent.contextTypes = {
-        serviceContainer: prp.instanceOf(yasdic_1.ServiceDIContainer)
+        serviceContainer: prp.any.isRequired
     };
     return InjectedAndConnectedComponent;
 };
